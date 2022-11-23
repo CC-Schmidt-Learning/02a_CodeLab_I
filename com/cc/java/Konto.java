@@ -1,10 +1,17 @@
 package com.cc.java;
 
 public class Konto {
-  private int kontostand= 10000;
-  private int kontostandOld=10000;
-  
-  public int getKontostandOld() {
+
+  private int kontostand;
+  private int kontostandOld;
+
+  public Konto(int kontostand, int kontostandOld) {
+    this.kontostand = kontostand;
+    this.kontostandOld = kontostandOld;
+}
+
+
+public int getKontostandOld() {
     return kontostandOld;
 }
 
